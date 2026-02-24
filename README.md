@@ -92,7 +92,7 @@
                     <a href="services.html"
                         class="text-gray-600 font-medium hover:text-primary transition-colors">Services</a>
                     <a href="contact.html"
-                        class="text-gray-600 font-medium hover:text-primary transition-colors">Contact</a>
+                        class="text-gray-600 font-medium hover:text-primary transition-colors">Contacts</a>
                     <a href="contact.html"
                         class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transform hover:-translate-y-0.5">Get
                         a Quote</a>
