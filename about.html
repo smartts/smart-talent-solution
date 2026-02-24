@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Smart Talent Solution (PVT) LTD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1d4ed8', // blue-700
+                        secondary: '#eab308', // yellow-500
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-2" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <svg class="h-10 w-10 text-primary" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M50 10C27.9 10 10 27.9 10 50C10 72.1 27.9 90 50 90C72.1 90 90 72.1 90 50C90 27.9 72.1 10 50 10ZM50 85C30.7 85 15 69.3 15 50C15 30.7 30.7 15 50 15C69.3 15 85 30.7 85 50C85 69.3 69.3 85 50 85Z"
+                                fill="#1d4ed8" />
+                            <path d="M70 20C55 10 35 15 25 30C15 45 20 65 35 75" stroke="#eab308" stroke-width="6"
+                                stroke-linecap="round" />
+                            <path
+                                d="M45 40C45 37.2 47.2 35 50 35C52.8 35 55 37.2 55 40C55 42.8 52.8 45 50 45C47.2 45 45 42.8 45 40ZM48 48H52V65H48V48ZM40 68H60V72H40V68Z"
+                                fill="#eab308" />
+                            <path
+                                d="M50 30C44.5 30 40 34.5 40 40C40 43.1 41.4 45.8 43.7 47.6V55H56.3V47.6C58.6 45.8 60 43.1 60 40C60 34.5 55.5 30 50 30ZM53.6 44.9C52.1 46.1 51 47.8 50.8 49.7H49.2C49 47.8 47.9 46.1 46.4 44.9C44.7 43.6 43.6 41.5 43.8 39.2C44 36.3 46.6 34 49.5 33.8C52.7 33.6 55.4 36 55.8 39.1C56 41.4 55.1 43.5 53.6 44.9Z"
+                                fill="#1d4ed8" />
+                        </svg>
+                        <span class="font-bold text-xl md:text-2xl text-dark tracking-tight leading-tight">Smart
+                            Talent<br><span class="text-primary">Solution</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-primary font-semibold hover:text-secondary transition-colors">About
+                        Us</a>
+                    <a href="services.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors">Services</a>
+                    <a href="contact.html"
+                        class="text-gray-600 font-medium hover:text-primary transition-colors">Contacts</a>
+                    <a href="contact.html"
+                        class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transform hover:-translate-y-0.5">Get
+                        a Quote</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden bg-white border-t border-gray-100">
+            <a href="index.html" class="block py-3 px-6 text-sm text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="about.html" class="block py-3 px-6 text-sm bg-blue-50 text-primary font-semibold">About Us</a>
+            <a href="services.html" class="block py-3 px-6 text-sm text-gray-600 hover:bg-gray-50">Services</a>
+            <a href="contact.html" class="block py-3 px-6 text-sm text-gray-600 hover:bg-gray-50">Contact</a>
+            <div class="px-6 py-4">
+                <a href="contact.html"
+                    class="block w-full text-center bg-primary text-white px-4 py-2 rounded-lg font-medium">Get a
+                    Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-20 bg-dark relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] opacity-20 bg-cover bg-center">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-dark to-dark/80"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">About Our <span
+                    class="text-secondary">Company</span></h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto font-light">
+                We are a dedicated team of HR professionals committed to transforming the way businesses find talent and
+                individuals find rewarding careers.
+            </p>
+            <div class="mt-8 flex justify-center items-center gap-2 text-sm text-gray-400">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-[10px]"></i>
+                <span class="text-secondary font-medium">About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-primary font-bold tracking-wide uppercase text-sm border-l-4 border-primary pl-3">
+                        Our Story</h2>
+                    <h3 class="text-3xl md:text-4xl font-extrabold text-dark leading-tight">Empowering Businesses
+                        Through Exceptional Talent</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Founded with a vision to redefine the recruitment landscape, Smart Talent Solution (PVT) LTD has
+                        grown from a specialized local agency into a premier national manpower provider. We understood
+                        early on that a company's greatest asset is its people, and finding the right people requires
+                        more than just matching resumes to job descriptions.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Over the years, our unwavering commitment to quality, integrity, and personalized service has
+                        allowed us to build lasting partnerships with both industry-leading corporations and rising
+                        startups, helping them navigate complex hiring challenges in a rapidly evolving market.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-6 border-t border-gray-100 mt-8">
+                        <div>
+                            <p class="text-4xl font-extrabold text-primary mb-2">10+</p>
+                            <p class="text-dark font-semibold">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-extrabold text-secondary mb-2">5K+</p>
+                            <p class="text-dark font-semibold">Happy Candidates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-primary/10 rounded-3xl transform translate-x-4 translate-y-4"></div>
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Office working environment"
+                        class="rounded-3xl shadow-xl border-8 border-white relative z-10 w-full object-cover h-[500px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div
+                    class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full blur-3xl group-hover:bg-blue-100 transition-colors">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-primary text-white rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md shadow-blue-500/30">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-dark mb-4">Our Mission</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            To bridge the gap between human potential and business objectives by delivering tailored,
+                            high-quality, and ethical recruitment solutions that drive mutual growth and success.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-yellow-50 rounded-full blur-3xl group-hover:bg-yellow-100 transition-colors">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-secondary text-dark rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md shadow-yellow-500/30">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-dark mb-4">Our Vision</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            To be the most trusted and universally recognized manpower partner in the region, known for
+                            our innovative approach to talent acquisition and steadfast commitment to excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-24 bg-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-secondary font-bold tracking-wide uppercase text-sm mb-2">Our Core Values</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-4">What Drives Us Forward</h3>
+                <p class="text-gray-400 text-lg">These fundamental principles guide every decision we make and every
+                    relationship we build.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-primary transition-colors hover:bg-gray-750">
+                    <i class="fas fa-handshake text-4xl text-primary mb-6 block"></i>
+                    <h4 class="text-xl font-bold mb-3">Integrity</h4>
+                    <p class="text-gray-400 text-sm">We believe in transparent, honest operations in all our dealings
+                        with clients and candidates.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-secondary transition-colors hover:bg-gray-750">
+                    <i class="fas fa-gem text-4xl text-secondary mb-6 block"></i>
+                    <h4 class="text-xl font-bold mb-3">Excellence</h4>
+                    <p class="text-gray-400 text-sm">We never compromise on the quality of candidates we represent or
+                        the services we provide.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-primary transition-colors hover:bg-gray-750">
+                    <i class="fas fa-lightbulb text-4xl text-primary mb-6 block"></i>
+                    <h4 class="text-xl font-bold mb-3">Innovation</h4>
+                    <p class="text-gray-400 text-sm">We continually update our methodologies to keep pace with an
+                        ever-changing professional world.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-secondary transition-colors hover:bg-gray-750">
+                    <i class="fas fa-users text-4xl text-secondary mb-6 block"></i>
+                    <h4 class="text-xl font-bold mb-3">Collaboration</h4>
+                    <p class="text-gray-400 text-sm">We function as an extension of your team, working closely to
+                        understand and meet your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 pt-16 pb-8 border-t border-gray-800">
+        <!-- Content identical to index.html -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="h-8 w-8 text-secondary" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M50 10C27.9 10 10 27.9 10 50C10 72.1 27.9 90 50 90C72.1 90 90 72.1 90 50C90 27.9 72.1 10 50 10ZM50 85C30.7 85 15 69.3 15 50C15 30.7 30.7 15 50 15C69.3 15 85 30.7 85 50C85 69.3 69.3 85 50 85Z"
+                                fill="#eab308" />
+                            <path d="M70 20C55 10 35 15 25 30C15 45 20 65 35 75" stroke="#ffffff" stroke-width="6"
+                                stroke-linecap="round" />
+                            <path
+                                d="M45 40C45 37.2 47.2 35 50 35C52.8 35 55 37.2 55 40C55 42.8 52.8 45 50 45C47.2 45 45 42.8 45 40ZM48 48H52V65H48V48ZM40 68H60V72H40V68Z"
+                                fill="#ffffff" />
+                        </svg>
+                        <span class="font-bold text-xl text-white tracking-tight">Smart Talent</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">Smart Talent Solution (PVT) LTD is your
+                        trusted partner in manpower recruitment, connecting leading companies with exceptional talents.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Quick Links
+                        <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> About Us</a></li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Services</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Services
+                        <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Temporary Staffing</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Permanent Placement</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> Executive Search</a>
+                        </li>
+                        <li><a href="services.html" class="hover:text-secondary transition-colors flex items-center"><i
+                                    class="fas fa-chevron-right text-xs mr-2 text-primary"></i> HR Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Contact Info
+                        <span class="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-primary mt-1"></i>
+                            <span class="text-sm">123 Business Avenue, Colombo 03, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone-alt text-primary"></i>
+                            <span class="text-sm">+94 11 234 5678</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <span class="text-sm">info@smarttalentsolution.lk</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Smart Talent Solution (PVT) LTD. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('py-0');
+                    navbar.classList.remove('py-2');
+                } else {
+                    navbar.classList.add('py-2');
+                    navbar.classList.remove('py-0');
+                }
+            });
+
+            // Mobile menu toggle
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</body>
+
+</html>
